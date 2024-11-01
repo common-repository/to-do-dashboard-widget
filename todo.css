@@ -1,0 +1,121 @@
+#todo-list li {
+	background-color: #f2f2f2;
+	padding: 10px 6px;
+	border-top: 1px #f8f8f8 solid;
+	border-bottom: 1px #e8e8e8 solid;
+	margin: 0;
+	cursor: -webkit-grab;
+	cursor: grab;
+	position:relative;
+	padding-right: 44px;
+}
+
+#todo-list li:active, #todo-widget p.cp i.fa.fa-bars.fa-lg:active {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+#todo-list li i.fa.fa-times-circle {
+	position: absolute;
+	right: 6px;
+	top: 13px;
+	color: #bbb;
+}
+
+#todo-list li.completed {
+	text-decoration: line-through;
+}
+
+#todo-list li span.todo-timestamp {
+	position: absolute;
+	right: 6px;
+	bottom: -4px;
+	color: #bbb;
+	font-style: italic;
+	font-size: 9px;
+}
+
+#todo-list li span.todo-item-text {
+	overflow-wrap: break-word;
+}
+
+#todo-list li span.editing {
+	cursor: text;
+}	
+
+#todo-list li i.fa.fa-times-circle:hover, .dashboard-widget-control-form i.fa.fa-minus-circle:hover {
+	color: #c00;
+	cursor: pointer;
+}
+
+#todo-list li i.fa.fa-check-circle {
+	position: absolute;
+	right: 26px;
+	top: 13px;
+	color: #bbb;
+}
+
+#todo-list li i.fa.fa-check-circle:hover, #todo-list li i.fa.fa-check-circle.completed, .dashboard-widget-control-form i.fa.fa-plus-circle:hover {
+	color: #393;
+	cursor: pointer;
+}
+
+#todo-widget input[name="item"], #todo-widget textarea {
+	width: 100%;
+}
+
+#todo-widget input[name="todo_allowed_html_tag"] {
+	width: 2em;
+}
+
+#todo-widget input[name="todo_allowed_html_attribute"] {
+	width: 4em;
+}
+
+#todo-widget input[disabled][readonly] {
+	background: #DECFCF;
+}
+
+#todo-widget select[name="todo_role_limit[]"] {
+	width: 99%;
+}
+
+#todo-widget input[name="todo_item_limit"], #todo-widget input[name="todo_age_number[]"] {
+	width: 4em;
+}
+
+#todo-widget #color_text {
+	margin-bottom:4px;
+}
+
+#todo-widget p.cp input, #todo-widget p.cp select {
+	height: 28px;
+	vertical-align: middle;
+}
+
+#todo-widget p.cp {
+	margin: 0 0 1px 0;
+	position:relative;
+	background: #f6f6f6;
+}
+
+#todo-widget p.cp i.fa.fa-bars.fa-lg {
+	position: absolute;
+	right: 6px;
+	top: 9px;
+	color: #ccc;
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+#todo-widget p {
+    margin-top: 1em;
+}
+
+.ui-sortable-helper {
+	box-shadow: 0 1px 4px 1px #bbb;
+}
+
+.wp-picker-container {
+	vertical-align:middle;
+}
